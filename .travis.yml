@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- node
+install: true
+script: echo "Skipping build"
+deploy:
+  edge: true
+  provider: bluemixcloudfoundry
+  username: apikey
+  organization: wojciech.sierakowski@hmhco.com
+  space: dev
+  manifest: manifest.yml
+  password:
+    secure: Gwo5fvAHBJLJMH0p4vnrcAFsQlZnwLyyv1EA64TEfKbFB3htZInXXmhFb0UXzXLSrdqx1Edmdxu4DKE+O84Gx0upxMGcmjvL99QBwr15qwyuag5LcU17liEBXUtCScOQ+UYZIsfAHz5OteVrOTzTGfrUDCXhPNLmEltmLzyK1xvsaylO5c/rY+LnH3c+OWzVXaT1ME0N30tnEPt7UgTPqbgjNg+xc89Q2rXAWr0i65zIiZxP65nAMcg/bBo61HntwMSN8RAWWmDs+6XrMRE7awaYaV44iWuffldL+0Xa0ZuNu63RqL+JAiaXZKKX4asE0ufXybmOMLfGh/obxaUKDjPVD12pwwbhlTaHLo9OyHLIDYKAy7jGmvOqRdl1WS5GMK6NeNyPhR6gz43vGh7VMg+ynKlyPT0fYc5DfNVZKS473qOYxhHroUWNyz54H/hRBvXLQmGF00XlzHey40wqMPqqOJDbJQRXPUk1ybbQ+jV42i9wNGl8msxPz/+ey4YUUgTmo8dzmnEljPXjmvk9/OGLZwIvRIG/7pPqEp/OrwvdCnaCLZBkviqRBMSkRAzH2K9jNkwX2JkchYbaU6PLVzT16XochhkU1boSLWLg/c87k0enomKD8fxlD7xt4OD1g2meigPKqJroDBY6tFtAi9y9fIg1t71aEhIp0GhwWcM=
