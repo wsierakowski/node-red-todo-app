@@ -3,12 +3,19 @@
     "description": "A Todo-Backend implementation using Node-RED and CouchDB. A sample application for https://github.com/knolleary/node-red-in-production-workshop",
     "version": "0.1.0",
     "dependencies": {
+        "node-red": "1.x",
         "node-red-contrib-cloudantplus": "0.2.0"
+    },
+    "engines": {
+        "node": "10.x"
     },
     "node-red": {
         "settings": {
             "flowFile": "flow.json",
             "credentialsFile": "flow_cred.json"
         }
+    },
+    "scripts": {
+        "start": "node --max-old-space-size=160 ./node_modules/node-red/red.js --userDir . --settings ./settings.js flow.json"
     }
 }

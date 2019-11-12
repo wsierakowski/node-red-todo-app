@@ -1,0 +1,4 @@
+applications:
+- name: woj-nodered-todoapp
+  memory: 256MB
+  instances: 1
